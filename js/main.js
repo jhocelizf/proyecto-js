@@ -20,7 +20,7 @@ const productos = [
     "imagen": "./img/manta1.jpg",
     "categoria": {
         "nombre": "Mantas",
-        "id": "Mantas"
+        "id": "mantas"
     },
     "precio": 1000
 },
@@ -30,7 +30,7 @@ const productos = [
     "imagen": "./img/manta2.jpg",
     "categoria": {
         "nombre": "Mantas",
-        "id": "Mantas"
+        "id": "mantas"
     },
     "precio": 1000
 },
@@ -40,7 +40,7 @@ const productos = [
     "imagen": "./img/manta3.jpg",
     "categoria": {
         "nombre": "Mantas",
-        "id": "Mantas"
+        "id": "mantas"
     },
     "precio": 1000
 },
@@ -50,7 +50,7 @@ const productos = [
     "imagen": "./img/manta4.jpg",
     "categoria": {
         "nombre": "Mantas",
-        "id": "Mantas"
+        "id": "mantas"
     },
     "precio": 1000
 },
@@ -60,7 +60,7 @@ const productos = [
     "imagen": "./img/manta5.jpg",
     "categoria": {
         "nombre": "Mantas",
-        "id": "Mantas"
+        "id": "mantas"
     },
     "precio": 1000
 },
@@ -70,7 +70,7 @@ const productos = [
     "imagen": "./img/manta6.jpg",
     "categoria": {
         "nombre": "Mantas",
-        "id": "Mantas"
+        "id": "mantas"
     },
     "precio": 1000
 },
@@ -81,7 +81,7 @@ const productos = [
     "imagen": "./img/almohadon1.jpg",
     "categoria": {
         "nombre": "Almohadon",
-        "id": "Almohadon"
+        "id": "almohadon"
     },
     "precio": 1000
 },
@@ -91,7 +91,7 @@ const productos = [
     "imagen": "./img/almohadon2.jpg",
     "categoria": {
         "nombre": "Almohadon",
-        "id": "Almohadon"
+        "id": "almohadon"
     },
     "precio": 1000
 },
@@ -101,7 +101,7 @@ const productos = [
     "imagen": "./img/almohadon3.jpg",
     "categoria": {
         "nombre": "Almohadon",
-        "id": "Almohadon"
+        "id": "almohadon"
     },
     "precio": 1000
 },
@@ -111,7 +111,7 @@ const productos = [
     "imagen": "./img/almohadon4.jpg",
     "categoria": {
         "nombre": "Almohadon",
-        "id": "Almohadon"
+        "id": "almohadon"
     },
     "precio": 1000
 },
@@ -121,7 +121,7 @@ const productos = [
     "imagen": "./img/almohadon5.jpg",
     "categoria": {
         "nombre": "Almohadon",
-        "id": "Almohadon"
+        "id": "almohadon"
     },
     "precio": 1000
 },
@@ -131,7 +131,7 @@ const productos = [
     "imagen": "./img/almohadon6.jpg",
     "categoria": {
         "nombre": "Almohadon",
-        "id": "Almohadon"
+        "id": "almohadon"
     },
     "precio": 1000
 },
@@ -141,7 +141,7 @@ const productos = [
     "imagen": "./img/almohadon7.jpg",
     "categoria": {
         "nombre": "Almohadon",
-        "id": "Almohadon"
+        "id": "almohadon"
     },
     "precio": 1000
 },
@@ -152,7 +152,7 @@ const productos = [
     "imagen": "./img/alfombra1.jpg",
     "categoria": {
         "nombre": "Alfombra",
-        "id": "Alfombra"
+        "id": "alfombra"
     },
     "precio": 1000
 },
@@ -162,7 +162,7 @@ const productos = [
     "imagen": "./img/alfombra2.jpg",
     "categoria": {
         "nombre": "Alfombra",
-        "id": "Alfombra"
+        "id": "alfombra"
     },
     "precio": 1000 
 },
@@ -172,7 +172,7 @@ const productos = [
     "imagen": "./img/alfombra3.jpg",
     "categoria": {
         "nombre": "Alfombra",
-        "id": "Alfombra"
+        "id": "alfombra"
     },
     "precio": 1000
 },
@@ -182,7 +182,7 @@ const productos = [
     "imagen": "./img/alfombra4.jpg",
     "categoria": {
         "nombre": "Alfombra",
-        "id": "Alfombra"
+        "id": "alfombra"
     },
     "precio": 1000
 },
@@ -192,7 +192,7 @@ const productos = [
     "imagen": "./img/alfombra5.jpg",
     "categoria": {
         "nombre": "Alfombra",
-        "id": "Alfombra"
+        "id": "alfombra"
     },
     "precio": 1000
 },
@@ -202,7 +202,7 @@ const productos = [
     "imagen": "./img/alfombra6.jpg",
     "categoria": {
         "nombre": "Alfombra",
-        "id": "Alfombra"
+        "id": "alfombra"
     },
     "precio": 1000
 },
@@ -213,7 +213,7 @@ const productos = [
     "imagen": "./img/cortina1.jpg",
     "categoria": {
         "nombre": "Cortina",
-        "id": "Cortina"
+        "id": "cortina"
     },
     "precio": 1000
 },
@@ -223,7 +223,7 @@ const productos = [
     "imagen": "./img/cortina2.jpg",
     "categoria": {
         "nombre": "Cortina",
-        "id": "Cortina"
+        "id": "cortina"
     },
     "precio": 1000
 },
@@ -233,17 +233,18 @@ const productos = [
     "imagen": "./img/cortina3.jpg",
     "categoria": {
         "nombre": "Cortina",
-        "id": "Cortina"
+        "id": "cortina"
     },
     "precio": 1000
 }
 ];
 
-const contenedorProductos = document.querySelector("#contenedor-productos");
-
-
+const contenedorProductos = document.querySelector("#contenedorProducto");
+const botonesCategoria = document.querySelectorAll(".boton-categoria");
 
 function agregarProductos() {
+
+    contenedorProductos.innerHTML = "";
 
     productos.forEach(producto =>
         {
@@ -260,20 +261,34 @@ function agregarProductos() {
                             `
         contenedorProductos.append(div);
         })
-
-    actualizarBotonesAgregar();
 }
-
 
 agregarProductos(productos);
 
-const botonesCategorias = document.querySelectorAll(".boton-categoria");
+botonesCategoria.forEach(boton => {
+    boton.addEventListener("click", (e) => { 
+        
+        botonesCategoria.forEach(boton => boton.classList.remove("active"));
+        e.currentTarget.classList.add("active");
 
-botonesCategorias.forEach(boton =>{
-    boton.addEventListener("click", function() {
-        const boton = productos.filter(producto => producto.categoria == alfombras );
+        if (e.currentTarget.id != "todos"){
+            const productosBoton = productos.filter(producto => producto.categoria.id === e.currentTarget.id);
+            agregarProductos(productosBoton);
+        } else {
+            agregarProductos(productos);
+        }
     })
 })
+
+
+
+
+
+
+
+
+
+
 
 
 
