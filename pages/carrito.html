@@ -14,83 +14,58 @@
     <div class="carrito">
         <header class="header">
             <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
-            <div class="search">
-                <input class="busca" type="text" placeholder="Buscar">
-                <a href="" class="boton"></a>
-            </div>
-            <div class="centro">
+                <div class="search"> 
+                    <input class="busca" type="text" placeholder="Buscar">
+                    <a href="" class="boton"></a>
+                </div>
+                <div class="centro">
                 <div class="logo">
-                    <img class="logo" src="./img/logo5.png" alt="Logo">
+                    <img class="logo" src="../img/logo5.png" alt="Logo">
                 </div>
                 <nav class="nav" id="nav">
-                    <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
-                    <ul class="nav-list">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="#">Productos</a>
-                            <ul>
-                                <li><a href="#">Mantas</a></li>
-                                <li><a href="#">Almohadones</a></li>
-                                <li><a href="#">Cortinas</a></li>
-                                <li><a href="#">Alfombras</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Quienes somos</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
+                        <button class="cerrar-menu" id="cerrar"><i class="bi bi-x-lg"></i></button>
+                        <ul class="nav-list">
+                            <li> 
+                                <button id="todos" class="boton-categoria active"><a href="../index.html">Inicio</a> </button>
+                            </li>
+                            <li><button  class="boton-categoria">Quienes Somos</button></li>
+                            <li><button  class="boton-categoria">Contacto</button></li>
+                        </ul>
                 </nav>
-            </div>
-            <div class="car">
-                <a class="boton-volver" href="./pages/carrito.html">
-                    <i class="bi bi-arrow-return-left"></i> Seguir comprando
-                </a>
-                <a class="boton-carrito" href="./pages/carrito.html">
-                    <i class="bi bi-cart4"></i>
-                </a>
-            </div>
+                </div>
+                <div class="car">
+                    <a class="boton-volver" href="../index.html">
+                        <i class="bi bi-arrow-return-left"></i> Seguir comprando
+                    </a>
+                </div>
         </header>
         <main>
             <h2>Carrito</h2>
             <div class="contenedor carrito">
-                <p class="carrito-vacio">Tu carrito esta vacio</p>
-                <div class="carrito-productos disabled">
+                <p id="carrito-vacio" class="carrito-vacio">Tu carrito esta vacio</p>
+                <div id="carrito-productos" class="carrito-productos disabled">
                     <div class="carrito-producto">
-                        <img class="carrito-producto-imagen" src="../img/alfombra2.jpg" alt="">
-                        <div class="carrito-producto-titulo">
-                            <small>Titutlo</small>
-                            <h3>Alfombra 1 </h3>
-                        </div>
-                        <div class="carrito-producto-cantidad">
-                            <small>Cantidad</small>
-                            <h3>1 </h3>
-                        </div>
-                        <div class="carrito-producto-precio">
-                            <small>Precio</small>
-                            <h3>$1000</h3>
-                        </div>
-                        <div class="carrito-producto-subtotal">
-                            <small>Subtotal</small>
-                            <h3>$1000</h3>
-                        </div>
-                        <button class="carrito-producto-eliminar"><i class="bi bi-trash-fill"></i></button>
+                    <!-- esto se completa con js -->
                     </div>
                 </div>
             </div>
-            <div class="carrito-acciones disabled">
+            <div id="carrito-acciones" class="carrito-acciones disabled">
                 <div class="carrito-acciones-izquierda">
-                    <button class="carrito-acciones-vaciar"> Vaciar carrito </button>
+                    <button id="carrito-acciones-vaciar" class="carrito-acciones-vaciar"> Vaciar carrito </button>
                 </div>
                 <div class="carrito-acciones-derecha">
                     <div class="carrito-acciones-total">
                         <p>Total</p>
                         <p id="total">$3000</p>
                     </div>
-                    <button class="carrito-acciones-comprar">Comprar</button>
+                    <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar</button>
                 </div>
             </div>
-            <p class="carrito-comprado disabled">Muchas gracias por tu compra</p>
+            <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra</p>
     </div>
 
     </main>
+    <script src="../js/carrito.js"></script>
 </body>
 
 </html>
