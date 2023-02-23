@@ -390,7 +390,10 @@ ul, ol{
 
 .carrito-vacio,
 .carrito-comprado{
+    height: 265px;
+    font-size: 25px;
     color: #9A9483;
+    text-align: center;
 }
 
 .carrito-productos{
