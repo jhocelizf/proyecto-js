@@ -13,7 +13,7 @@ cerrar.addEventListener("click", () => {
 
 // PRODUCTOS
 
-class producto {
+class Producto {
     constructor (id, tituto, imagen, categoria, precio){
         this.id = id;
         this.titulo = tituto;
@@ -26,31 +26,31 @@ class producto {
 }
 
 // mantas
-const manta1 = new producto("manta-1", "Manta 1","./img/manta1.jpg", "mantas", 1000); 
-const manta2 = new producto("manta-2", "Manta 2","./img/manta2.jpg", "mantas" , 1000);
-const manta3 = new producto("manta-3", "Manta 3","./img/manta3.jpg", "mantas" , 1000);
-const manta4 = new producto("manta-4", "Manta 4","./img/manta4.jpg", "mantas" , 1000);
-const manta5 = new producto("manta-5", "Manta 5","./img/manta5.jpg", "mantas", 1000);
-const manta6 = new producto("manta-6", "Manta 6","./img/manta6.jpg", "mantas" , 1000);
+const manta1 = new Producto("manta-1", "Manta 1","./img/manta1.jpg", "mantas", 1000); 
+const manta2 = new Producto("manta-2", "Manta 2","./img/manta2.jpg", "mantas" , 1000);
+const manta3 = new Producto("manta-3", "Manta 3","./img/manta3.jpg", "mantas" , 1000);
+const manta4 = new Producto("manta-4", "Manta 4","./img/manta4.jpg", "mantas" , 1000);
+const manta5 = new Producto("manta-5", "Manta 5","./img/manta5.jpg", "mantas", 1000);
+const manta6 = new Producto("manta-6", "Manta 6","./img/manta6.jpg", "mantas" , 1000);
 // almohadones
-const almohadon1 = new producto("almohadon1", "Almohadon 1", "./img/almohadon1.jpg", "almohadon", 1000);
-const almohadon2 = new producto("almohadon2", "Almohadon 2", "./img/almohadon2.jpg", "almohadon", 1000);
-const almohadon3 = new producto("almohadon3", "Almohadon 3", "./img/almohadon3.jpg", "almohadon", 1000);
-const almohadon4 = new producto("almohadon4", "Almohadon 4", "./img/almohadon4.jpg", "almohadon", 1000);
-const almohadon5 = new producto("almohadon5", "Almohadon 5", "./img/almohadon5.jpg", "almohadon", 1000);
-const almohadon6 = new producto("almohadon6", "Almohadon 6", "./img/almohadon6.jpg", "almohadon", 1000);
-const almohadon7 = new producto("almohadon7", "Almohadon 7", "./img/almohadon7.jpg", "almohadon", 1000);
+const almohadon1 = new Producto("almohadon1", "Almohadon 1", "./img/almohadon1.jpg", "almohadon", 1000);
+const almohadon2 = new Producto("almohadon2", "Almohadon 2", "./img/almohadon2.jpg", "almohadon", 1000);
+const almohadon3 = new Producto("almohadon3", "Almohadon 3", "./img/almohadon3.jpg", "almohadon", 1000);
+const almohadon4 = new Producto("almohadon4", "Almohadon 4", "./img/almohadon4.jpg", "almohadon", 1000);
+const almohadon5 = new Producto("almohadon5", "Almohadon 5", "./img/almohadon5.jpg", "almohadon", 1000);
+const almohadon6 = new Producto("almohadon6", "Almohadon 6", "./img/almohadon6.jpg", "almohadon", 1000);
+const almohadon7 = new Producto("almohadon7", "Almohadon 7", "./img/almohadon7.jpg", "almohadon", 1000);
 // alfombras
-const alfombra1 = new producto("alfombras1", "Alfombra 1", "./img/alfombra1.jpg", "alfombra", 1000);
-const alfombra2 = new producto("alfombras2", "Alfombra 2", "./img/alfombra2.jpg", "alfombra", 1000);
-const alfombra3 = new producto("alfombras3", "Alfombra 3", "./img/alfombra3.jpg", "alfombra", 1000);
-const alfombra4 = new producto("alfombras4", "Alfombra 4", "./img/alfombra4.jpg", "alfombra", 2000);
-const alfombra5 = new producto("alfombras5", "Alfombra 5", "./img/alfombra5.jpg", "alfombra", 1000);
-const alfombra6 = new producto("alfombras6", "Alfombra 6", "./img/alfombra6.jpg", "alfombra", 1000);
+const alfombra1 = new Producto("alfombras1", "Alfombra 1", "./img/alfombra1.jpg", "alfombra", 1000);
+const alfombra2 = new Producto("alfombras2", "Alfombra 2", "./img/alfombra2.jpg", "alfombra", 1000);
+const alfombra3 = new Producto("alfombras3", "Alfombra 3", "./img/alfombra3.jpg", "alfombra", 1000);
+const alfombra4 = new Producto("alfombras4", "Alfombra 4", "./img/alfombra4.jpg", "alfombra", 2000);
+const alfombra5 = new Producto("alfombras5", "Alfombra 5", "./img/alfombra5.jpg", "alfombra", 1000);
+const alfombra6 = new Producto("alfombras6", "Alfombra 6", "./img/alfombra6.jpg", "alfombra", 1000);
 // cotinas
-const cortina1 = new producto("cortina1", "Cortina 1", "./img/cortina1.jpg", "cortina", 1000);
-const cortina2 = new producto("cortina2", "Cortina 2", "./img/cortina2.jpg", "cortina", 1000);
-const cortina3 = new producto("cortina3", "Cortina 3", "./img/cortina3.jpg", "cortina", 1000);
+const cortina1 = new Producto("cortina1", "Cortina 1", "./img/cortina1.jpg", "cortina", 1000);
+const cortina2 = new Producto("cortina2", "Cortina 2", "./img/cortina2.jpg", "cortina", 1000);
+const cortina3 = new Producto("cortina3", "Cortina 3", "./img/cortina3.jpg", "cortina", 1000);
 
 // array de productos
 
