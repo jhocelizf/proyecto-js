@@ -62,7 +62,7 @@ const botonesCategoria = document.querySelectorAll(".boton-categoria");
 let botonesAgregados = document.querySelectorAll(".producto-agregar");
 const numerito = document.querySelector("#numerito");
 
-function agregarProductos() {
+function agregarProductos(productos) {
 
     contenedorProductos.innerHTML = "";
 
@@ -108,7 +108,7 @@ botonesCategoria.forEach((boton, idx) => {
                 categoria(almohadon)
                 break;
             default:
-                agregarProductos()
+                agregarProductos(productos)
                 break;
         }
     })
@@ -136,6 +136,21 @@ function mostrarInicio() {
     });
 }
 mostrarInicio();
+
+// FUNCION BUSCADOR
+function buscarProductos(){
+    let search = document.getElementById("buscar");
+    search.addEventListener("input", () => {
+    
+    const valorBusqueda = search.value;
+    const productosFiltrados = productos.filter( (producto) => {
+        return producto.titulo.toLowerCase().includes(valorBusqueda.toLowerCase());
+    });
+        
+    agregarProductos(productosFiltrados);
+});
+}
+buscarProductos();
 
 function categoria(array) {
     contenedorProductos.innerHTML = "";
@@ -175,6 +190,25 @@ if(productosEnCarritoLS){
 }
 
 function meterAlCarrito(e){
+
+    Toastify({
+        text: "Producto agregado",
+        duration: 3000,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+        color: "Beige",
+        background: "linear-gradient(to right, #9a9483f5, #C7BEA2)",
+        fontSize: "1rem",
+        },
+        offset: {
+            x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
+            y: "1.5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
 
     const idBton= e.currentTarget.id;
     const productoAgregado = productos.find(producto => producto.id === idBton);

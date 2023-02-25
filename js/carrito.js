@@ -82,10 +82,29 @@ botonVaciar.addEventListener("click", vaciarCarrito);
 
 function vaciarCarrito(){
 
+    Swal.fire({
+        title: '¿Estas seguro?',
+        text: "Se borraran los productos del carrito",
+        icon: 'question',
+        width:'350px',
+        showCancelButton: true,
+        focusConfirm: false,
+        iconColor:'#9A9483',
+        confirmButtonColor: '#9A9483',
+        cancelButtonColor: '#E5DCC3',
+        confirmButtonText: 'Si',
+        cancelButtonText: 'No',
+    }).then((result) => {
+        if (result.isConfirmed) {
+            
     productosEnCarrito.length = 0;
     localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
     subirProductoCarrito();
+        }
+    })
 }
+
+
 
 function actualizarTotal(){
     const totalCalculado = productosEnCarrito.reduce((acc, producto) => acc + (producto.precio * producto.cantidad), 0);
