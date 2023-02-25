@@ -96,16 +96,16 @@ botonesCategoria.forEach((boton, idx) => {
         let botonDinamico = boton.id
         switch (botonDinamico) {
             case 'cortina':
-                Categoria(cortina)
+                categoria(cortina)
                 break;
             case 'mantas':
-                Categoria(mantas)
+                categoria(mantas)
                 break;
             case 'alfombra':
-                Categoria(alfombra)
+                categoria(alfombra)
                 break;
             case 'almohadon':
-                Categoria(almohadon)
+                categoria(almohadon)
                 break;
             default:
                 agregarProductos()
@@ -113,7 +113,31 @@ botonesCategoria.forEach((boton, idx) => {
         }
     })
 })
-function Categoria(array) {
+
+function mostrarDiv() {
+    let mostrar = document.getElementById("ocultar");
+    mostrar.style.display = "block";
+}
+mostrarDiv();
+
+function hide(){
+    let hide1 = document.getElementById("productos");
+    hide1.addEventListener("click", () => {
+        let ocultar = document.getElementById("ocultar");
+        ocultar.style.display = "none";
+    });
+}
+hide();
+
+function mostrarInicio() {
+    let botonMostrarTodo = document.getElementById("todos");
+    botonMostrarTodo.addEventListener("click", () => {
+        mostrarDiv();
+    });
+}
+mostrarInicio();
+
+function categoria(array) {
     contenedorProductos.innerHTML = "";
     array.forEach(producto => {
         let div = document.createElement("div");

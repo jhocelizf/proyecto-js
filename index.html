@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/style.css">
-    <title>Document</title>
+    <title>Ama de Casa | proyecto Js</title>
 </head>
 <body>
     <header class="header">
@@ -25,7 +25,7 @@
                         <li> 
                             <button id="todos" class="boton-categoria active">Inicio</button>
                         </li>
-                        <li><button class="boton-categoria"> Productos</button>
+                        <li><button id="productos" class="boton-categoria"> Productos</button>
                             <ul>
                                 <li>
                                     <button id="mantas" class="boton-categoria">Mantas</button>
@@ -53,61 +53,62 @@
             </div>
     </header>
     <main>
-        <section>
-        <div class="hero">
-            <div class="img">
-                <img src="./img/imgHero.jpg" alt="">
-                <div class="sale">
-                    <img src="./img/manchita.png" alt="">
+        <div id="ocultar" class="ocultar">
+            <section>
+                <div class="hero">
+                    <div class="img">
+                        <img src="./img/imgHero.jpg" alt="">
+                        <div class="sale">
+                            <img src="./img/manchita.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="container-hero">
+                        <h1>Aprovecha este momento</h1>
+                        <h2>¡¡Gracias por elerginos!!</h2>
+                        <h3>Tenes un 15% de descuento pagando por transferencia bancaria</h3>
+                    </div>
                 </div>
-            </div>
-
-
-            
-            <div class="container-hero">
-                <h1>Aprovecha este momento</h1>
-                <h2>¡¡Gracias por elerginos!!</h2>
-                <h3>Tenes un 15% de descuento pagando por transferencia bancaria</h3>
-            </div>
+                </section>
+                <section class="informacion">
+                    <div class="send">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-truck-front-fill" viewBox="0 0 16 16">
+                            <path d="M3.5 0A2.5 2.5 0 0 0 1 2.5v9c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2v-9A2.5 2.5 0 0 0 12.5 0h-9ZM3 3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3.9c0 .625-.562 1.092-1.17.994C10.925 7.747 9.208 7.5 8 7.5c-1.208 0-2.925.247-3.83.394A1.008 1.008 0 0 1 3 6.9V3Zm1 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm-5-2h2a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2Z"/>
+                        </svg>
+                        <h2>Enviamos a todo el pais</h2>
+                    </div>
+                    <div class="cuotas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                            <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                            <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                        <h2>3 cuotas sin interes</h2>
+                    </div>
+                    <div class="send-off">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gift-fill" viewBox="0 0 16 16">
+                            <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
+                        </svg>
+                        <h2>Envios GRATIS apartir de $10.000</h2>
+                    </div>
+                </section>
+                <section class="productos-1">
+                    <div class="grid-container">
+                        <div class="grid-item">
+                            <a class="tarjetas" href="#manta-1"><img src="./img/mantas.jpg" alt="Mantas"></a>
+                            <h3>Mantas</h3>
+                        </div>
+                        <div class="grid-item">
+                            <a class="tarjetas" href="#almohadon1"><img src="./img/almohadones.jpg" alt="Almohadones"></a>
+                            <h3>Almohadones</h3>
+                        </div>
+                        <div class="grid-item">
+                            <a class="tarjetas" href="#alfombras2"><img src="./img/alfombras.jpg" alt="Alfombras"></a>
+                            <h3>Alfombras</h3>
+                        </div>
+                    </div>
+                </section>
         </div>
-        </section>
-        <section class="informacion">
-            <div class="send">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-truck-front-fill" viewBox="0 0 16 16">
-                    <path d="M3.5 0A2.5 2.5 0 0 0 1 2.5v9c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2v-9A2.5 2.5 0 0 0 12.5 0h-9ZM3 3a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v3.9c0 .625-.562 1.092-1.17.994C10.925 7.747 9.208 7.5 8 7.5c-1.208 0-2.925.247-3.83.394A1.008 1.008 0 0 1 3 6.9V3Zm1 9a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm8 0a1 1 0 1 1 0-2 1 1 0 0 1 0 2Zm-5-2h2a1 1 0 1 1 0 2H7a1 1 0 1 1 0-2Z"/>
-                </svg>
-                <h2>Enviamos a todo el pais</h2>
-            </div>
-            <div class="cuotas">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
-                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
-                    <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
-                </svg>
-                <h2>3 cuotas sin interes</h2>
-            </div>
-            <div class="send-off">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-gift-fill" viewBox="0 0 16 16">
-                    <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A2.968 2.968 0 0 1 3 2.506V2.5zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43a.522.522 0 0 0 .023.07zM9 3h2.932a.56.56 0 0 0 .023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0V3zm6 4v7.5a1.5 1.5 0 0 1-1.5 1.5H9V7h6zM2.5 16A1.5 1.5 0 0 1 1 14.5V7h6v9H2.5z"/>
-                </svg>
-                <h2>Envios GRATIS apartir de $10.000</h2>
-            </div>
-        </section>
-        <section class="productos-1">
-            <div class="grid-container">
-                <div class="grid-item">
-                    <a class="tarjetas" href="#manta-1"><img src="./img/mantas.jpg" alt="Mantas"></a>
-                    <h3>Mantas</h3>
-                </div>
-                <div class="grid-item">
-                    <a class="tarjetas" href="#almohadon1"><img src="./img/almohadones.jpg" alt="Almohadones"></a>
-                    <h3>Almohadones</h3>
-                </div>
-                <div class="grid-item">
-                    <a class="tarjetas" href="#alfombras2"><img src="./img/alfombras.jpg" alt="Alfombras"></a>
-                    <h3>Alfombras</h3>
-                </div>
-            </div>
-        </section>
+        
         <section class="hogar">
             <div>
             <h2> - Convertimos tu casa, en tu hogar - </h2>
