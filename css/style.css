@@ -646,12 +646,12 @@ ul, ol{
     } */
 
     .header .car .boton-carrito .numerito{
-        font-size: 18px;
+        font-size: 15px;
     }
 
     .hero .img img{
-        width: 180px;
-        height: 200px;
+        width: 150px;
+        height: 180px;
     }
     .hero .img .sale img{
         width: 50px;
@@ -659,12 +659,12 @@ ul, ol{
     }
     .hero .container-hero h1{
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         padding-left: 10px;
         padding-bottom: 10px;
     }
     .hero .container-hero h2, h3{
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .informacion{
@@ -692,27 +692,27 @@ ul, ol{
     }
 
     .ocultar .productos-1{
-        height: 250px;
+        height: 200px;
     } 
     .ocultar .productos-1 .grid-container{
-        grid-template-columns: repeat(3, 120px);
-        grid-template-rows: 200px;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: 150px;
         gap: 15px;    
         padding-left: 10px;
         padding-right: 10px;
     }
     .ocultar .productos-1 .grid-item h3{
-        font-size: 12px;
+        font-size: 10px;
     }
     .productos-1 .grid-container .grid-item img{
-        width: 120px;
-        height: 200px;
+        width: 100px;
+        height: 150px;
     }
-    .ocultar .hogar h2{
-        height: 100px;
+    .hogar .casa h2{
+        height: 50px;
         font-size: 18px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 10px;
     }
     .cards .contenedor-productos{
         grid-template-columns: repeat(1, 1fr);
