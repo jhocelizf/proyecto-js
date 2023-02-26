@@ -650,16 +650,16 @@ ul, ol{
     }
 
     .hero .img img{
-        width: 200px;
+        width: 180px;
         height: 200px;
     }
     .hero .img .sale img{
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 60px;
     }
     .hero .container-hero h1{
         text-align: center;
-        font-size: 25px;
+        font-size: 20px;
         padding-left: 10px;
         padding-bottom: 10px;
     }
@@ -671,7 +671,7 @@ ul, ol{
         justify-content: space-between;
     }
     .informacion .send h2{
-        font-size: 12px;
+        font-size: 10px;
         padding-left: 5px;
         text-align: center;
     }
@@ -680,13 +680,13 @@ ul, ol{
         width: 28px;
     }
     .informacion .cuotas h2{
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
         padding-left: 5px;
     }
     
     .informacion .send-off h2{
-        font-size: 12px;
+        font-size: 10px;
         text-align: center;
         padding-left: 5px;
     }
@@ -695,7 +695,7 @@ ul, ol{
         height: 250px;
     } 
     .ocultar .productos-1 .grid-container{
-        grid-template-columns: repeat(3, 150px);
+        grid-template-columns: repeat(3, 120px);
         grid-template-rows: 200px;
         gap: 15px;    
         padding-left: 10px;
@@ -705,7 +705,7 @@ ul, ol{
         font-size: 12px;
     }
     .productos-1 .grid-container .grid-item img{
-        width: 145px;
+        width: 120px;
         height: 200px;
     }
     .ocultar .hogar h2{
@@ -765,6 +765,9 @@ ul, ol{
     main .carrito-titulo h2{
             font-size: 25px;
             text-align: center;
+    }
+    .contenedor-carrito .carrito-productos {
+        gap: 1.5rem;
     }
     .carrito-acciones{
         font-size: 14px;
