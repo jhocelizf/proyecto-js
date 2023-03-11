@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>tarjeta</title>
+</head>
+
+<body>
+    <main class="wrapper">
+        <div class="card">
+            <div class="card-front">
+                <img src="../img/bg-card-front.png" alt="Frente de la tarjeta">
+                <div class="card-front__data">
+                    <img src="../img/card-logo.svg" alt="">
+                    <div>
+                        <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+                        <div class="card-name-date">
+                            <p class="card-name" id="card-name">Jane Appleseed</p>
+                            <p class="card-date">
+                                <span id="card-month">00</span>/<span id="card-year">00</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-back">
+                <img src="../img/tarjeta-atras.png" alt="Dorso de la tarjeta">
+                <div class="card-back__data">
+                    <p class="card-cvc" id="card-cvc">000</p>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        <div class="form-wrapper">
+            <form class="form" id="form">
+                <div class="form-group">
+                    <label for="input-name" class="label">Cardholder Name</label>
+                    <input type="text" class="input" id="input-name" placeholder="e.g. Jane Appleseed" required>
+                </div>
+                <div class="form-group">
+                    <label for="input-number" class="label">Card Number</label>
+                    <input type="text" class="input" id="input-number" placeholder="e.g. 1234 5678 9123 0000" required>
+                </div>
+                <div class="form-group double">
+                    <div class="rows">
+                        <label for="input-month" class="label">Exp. Date (MM/YY)</label>
+                        <div class="columns">
+                            <input type="text" class="input" id="input-month" placeholder="MM" maxlength="2" required>
+                            <input type="text" class="input" id="input-year" placeholder="YY" maxlength="2" required>
+                        </div>
+                    </div>
+                    <div class="rows">
+                        <label for="input-cvc" class="label">CVC</label>
+                        <input type="text" class="input" id="input-cvc" placeholder="e.g. 123" maxlength="3" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="button" type="submit">Confirmar</button>
+                </div>
+            </form>
+
+            <div class="thank-you disabled" id="thank-you">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-check-circle" viewBox="0 0 16 16">
+                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                    <path d="M10.97 4.97a.235.235 0 0 0-.02.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-1.071-1.05z"/>
+                </svg>
+                <p class="thank-you-title">Gracias!</p>
+                <p class="thank-you-text">Te enviaremos los detalles de tu compra</p>
+                <button class="button" id="continue">Continuar</button>
+            </div>
+        </div>
+
+    </main>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+    <script src="../js/tarjeta.js"></script>
+</body>
+
+</html>

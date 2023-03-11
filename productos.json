@@ -1,0 +1,156 @@
+[
+    {
+        "id": "manta-1",
+        "titulo": "Manta 1",
+        "imagen": "./img/manta1.jpg",
+        "categoria": "mantas",
+        "precio": 1000
+    },
+    {
+        "id": "manta-2",
+        "titulo": "Manta 2",
+        "imagen": "./img/manta3.jpg",
+        "categoria": "mantas",
+        "precio": 1000
+    },
+    {
+        "id": "manta-3",
+        "titulo": "Manta 3",
+        "imagen": "./img/manta3.jpg",
+        "categoria": "mantas",
+        "precio": 1000
+    },
+    {
+        "id": "manta-4",
+        "titulo": "Manta 4",
+        "imagen": "./img/manta4.jpg",
+        "categoria": "mantas",
+        "precio": 1000
+    },
+    {
+        "id": "manta-5",
+        "titulo": "Manta 5",
+        "imagen": "./img/manta5.jpg",
+        "categoria": "mantas",
+        "precio": 1000
+    },
+    {
+        "id": "manta-6",
+        "titulo": "Manta 6",
+        "imagen": "./img/manta6.jpg",
+        "categoria": "mantas",
+        "precio": 1000
+    },
+    {
+        "id": "almohadon1",
+        "titulo": "Almohadon 1",
+        "imagen": "./img/almohadon1.jpg",
+        "categoria":  "almohadon",
+        "precio": 1000
+    },
+    {
+        "id": "almohadon2" ,
+        "titulo": "Almohadon 2",
+        "imagen": "./img/almohadon2.jpg",
+        "categoria": "almohadon",
+        "precio": 1000
+    },
+    {
+        "id": "almohadon3" ,
+        "titulo": "Almohadon 3",
+        "imagen": "./img/almohadon3.jpg",
+        "categoria": "almohadon",
+        "precio": 1000
+    },
+    {
+        "id": "almohadon4" ,
+        "titulo": "Almohadon 4",
+        "imagen": "./img/almohadon4.jpg",
+        "categoria": "almohadon",
+        "precio": 1000
+    },
+    {
+        "id": "almohadon5" ,
+        "titulo": "Almohadon 5",
+        "imagen": "./img/almohadon5.jpg",
+        "categoria": "almohadon",
+        "precio": 1000
+    },
+    {
+        "id": "almohadon6" ,
+        "titulo": "Almohadon 6",
+        "imagen": "./img/almohadon6.jpg",
+        "categoria": "almohadon",
+        "precio": 1000
+    },
+    {
+        "id": "almohadon7" ,
+        "titulo": "Almohadon 7",
+        "imagen": "./img/almohadon7.jpg",
+        "categoria": "almohadon",
+        "precio": 1000
+    },
+    {
+        "id": "alfombras1" ,
+        "titulo":  "Alfombra 1",
+        "imagen": "./img/alfombra1.jpg",
+        "categoria": "alfombra",
+        "precio": 1000
+    },
+    {
+        "id": "alfombras2" ,
+        "titulo":  "Alfombra 2",
+        "imagen": "./img/alfombra2.jpg",
+        "categoria": "alfombra",
+        "precio": 1000
+    },
+    {
+        "id": "alfombras3" ,
+        "titulo":  "Alfombra 3",
+        "imagen": "./img/alfombra3.jpg",
+        "categoria": "alfombra",
+        "precio": 1000
+    },
+    {
+        "id": "alfombras4" ,
+        "titulo":  "Alfombra 4",
+        "imagen": "./img/alfombra4.jpg",
+        "categoria": "alfombra",
+        "precio": 1000
+    },
+    {
+        "id": "alfombras5" ,
+        "titulo":  "Alfombra 5",
+        "imagen": "./img/alfombra5.jpg",
+        "categoria": "alfombra",
+        "precio": 1000
+    },
+    {
+        "id": "alfombras6" ,
+        "titulo":  "Alfombra 6",
+        "imagen": "./img/alfombra6.jpg",
+        "categoria": "alfombra",
+        "precio": 1000
+    },
+    {
+        "id": "cortina1" ,
+        "titulo":  "Cortina 1",
+        "imagen": "./img/cortina1.jpg",
+        "categoria": "cortina",
+        "precio": 1000
+    },
+    {
+        "id": "cortina2" ,
+        "titulo":  "Cortina 2",
+        "imagen": "./img/cortina2.jpg",
+        "categoria": "cortina",
+        "precio": 1000
+    },
+    {
+        "id": "cortina3" ,
+        "titulo":  "Cortina 3",
+        "imagen": "./img/cortina3.jpg",
+        "categoria": "cortina",
+        "precio": 1000
+    }
+]

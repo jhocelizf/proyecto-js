@@ -29,9 +29,17 @@ function subirProductoCarrito() {
                 <small>Titutlo</small>
                 <h3>${producto.titulo}</h3>
             </div>
+            <div class="div-cantidad"> 
+                <button class="boton-menos" id="botonMenos${producto.id}">
+            -
+                </button>
             <div class="carrito-producto-cantidad">
                 <small>Cantidad</small>
                 <h3>${producto.cantidad}</h3>
+            </div>
+                <button class="boton-mas" id="botonMas${producto.id}">
+                +
+                </button>
             </div>
             <div class="carrito-producto-precio">
                 <small>Precio</small>
@@ -45,6 +53,16 @@ function subirProductoCarrito() {
             `;
     
             carritoProductos.appendChild(div);
+
+            let sumar = document.querySelectorAll(".boton-mas");
+            sumar.forEach(boton => { 
+            boton.addEventListener("click", sumarFuncion);
+
+            let restar = document.querySelectorAll(".boton-menos");
+            restar.forEach(boton => { 
+            boton.addEventListener("click", restarFuncion);
+            })
+        })
         })
 
         actualizarBotonesEliminar();
@@ -66,6 +84,29 @@ function actualizarBotonesEliminar(){
     botonesEliminador.forEach(boton => {
         boton.addEventListener("click", eliminarDelCarrito);
     });
+}
+
+function sumarFuncion(e){
+    console.log(e.target.id);
+    const buttonId = e.target.id.substring(8) // esta línea es nueva
+    let index = productosEnCarrito.findIndex(producto => producto.id  == buttonId); // acá el final cambia
+
+    productosEnCarrito[index].cantidad++;
+    subirProductoCarrito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
+
+}
+
+function restarFuncion(e){
+    console.log(e.target.id);
+    const idButton = e.target.id.substring(10) 
+    let index = productosEnCarrito.findIndex(producto => producto.id  == idButton); 
+
+    productosEnCarrito[index].cantidad--;
+    subirProductoCarrito();
+
+    localStorage.setItem("productos-en-carrito", JSON.stringify(productosEnCarrito));
 }
 
 function eliminarDelCarrito(e){
