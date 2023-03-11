@@ -484,6 +484,7 @@ ul, ol{
     padding-inline: 6rem;
     gap: 2rem;
     justify-content: center;
+    color: #7c7767;
 }
 
 .card img {
@@ -593,9 +594,10 @@ flex-direction: column;
 }
 
 .input {
-border: 1px solid var(--clr-light-gray);
+border: 1px solid #9A9483;
 padding: .75rem;
 border-radius: .5rem;
+color: #7c7767;
 }
 
 .input::placeholder {
@@ -1100,7 +1102,7 @@ width: 90%;
     }
     
     .input {
-        border: 1px solid var(--clr-light-gray);
+        border: 1px solid #9A9483;
         padding: .75rem;
         border-radius: .5rem;
     }
@@ -1111,5 +1113,9 @@ width: 90%;
         font-size: .75rem;
         letter-spacing: 1px;
         margin-bottom: .25rem;
+    }
+
+    .disabled {
+        display: none;
     }
 }
