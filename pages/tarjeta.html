@@ -18,11 +18,11 @@
                 <div class="card-front__data">
                     <img src="../img/card-logo.svg" alt="">
                     <div>
-                        <p class="card-number" id="card-number">0000 0000 0000 0000</p>
+                        <p class="tarjeta-numero" id="tarjeta-numero">0000 0000 0000 0000</p>
                         <div class="card-name-date">
-                            <p class="card-name" id="card-name">Jane Appleseed</p>
+                            <p class="tarjeta-nombre" id="tarjeta-nombre">Maria Perez</p>
                             <p class="card-date">
-                                <span id="card-month">00</span>/<span id="card-year">00</span>
+                                <span id="tarjeta-mes">00</span>/<span id="tarjeta-year">00</span>
                             </p>
                         </div>
                     </div>
@@ -40,16 +40,16 @@
         <div class="form-wrapper">
             <form class="form" id="form">
                 <div class="form-group">
-                    <label for="input-name" class="label">Cardholder Name</label>
-                    <input type="text" class="input" id="input-name" placeholder="e.g. Jane Appleseed" required>
+                    <label for="input-name" class="label">Nombre y apellido</label>
+                    <input type="text" class="input" id="input-name" placeholder="e.j. Maria Perez" required>
                 </div>
                 <div class="form-group">
-                    <label for="input-number" class="label">Card Number</label>
-                    <input type="text" class="input" id="input-number" placeholder="e.g. 1234 5678 9123 0000" required>
+                    <label for="input-number" class="label">Numero de la Tarjeta</label>
+                    <input type="text" class="input" id="input-number" placeholder="e.j. 1234 5678 9123 0000" required>
                 </div>
                 <div class="form-group double">
                     <div class="rows">
-                        <label for="input-month" class="label">Exp. Date (MM/YY)</label>
+                        <label for="input-month" class="label">Fecha Venc (MM/YY)</label>
                         <div class="columns">
                             <input type="text" class="input" id="input-month" placeholder="MM" maxlength="2" required>
                             <input type="text" class="input" id="input-year" placeholder="YY" maxlength="2" required>

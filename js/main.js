@@ -12,7 +12,7 @@ cerrar.addEventListener("click", () => {
 })
 
 // PRODUCTOS
-
+// class
 class Producto {
     constructor(id, tituto, imagen, categoria, precio) {
         this.id = id;
@@ -25,38 +25,7 @@ class Producto {
 
 }
 
-// // mantas
-// const manta1 = new Producto("manta-1", "Manta 1","./img/manta1.jpg", "mantas", 1000); 
-// const manta2 = new Producto("manta-2", "Manta 2","./img/manta2.jpg", "mantas" , 1000);
-// const manta3 = new Producto("manta-3", "Manta 3","./img/manta3.jpg", "mantas" , 1000);
-// const manta4 = new Producto("manta-4", "Manta 4","./img/manta4.jpg", "mantas" , 1000);
-// const manta5 = new Producto("manta-5", "Manta 5","./img/manta5.jpg", "mantas", 1000);
-// const manta6 = new Producto("manta-6", "Manta 6","./img/manta6.jpg", "mantas" , 1000);
-// // almohadones
-// const almohadon1 = new Producto("almohadon1", "Almohadon 1", "./img/almohadon1.jpg", "almohadon", 1000);
-// const almohadon2 = new Producto("almohadon2", "Almohadon 2", "./img/almohadon2.jpg", "almohadon", 1000);
-// const almohadon3 = new Producto("almohadon3", "Almohadon 3", "./img/almohadon3.jpg", "almohadon", 1000);
-// const almohadon4 = new Producto("almohadon4", "Almohadon 4", "./img/almohadon4.jpg", "almohadon", 1000);
-// const almohadon5 = new Producto("almohadon5", "Almohadon 5", "./img/almohadon5.jpg", "almohadon", 1000);
-// const almohadon6 = new Producto("almohadon6", "Almohadon 6", "./img/almohadon6.jpg", "almohadon", 1000);
-// const almohadon7 = new Producto("almohadon7", "Almohadon 7", "./img/almohadon7.jpg", "almohadon", 1000);
-// // alfombras
-// const alfombra1 = new Producto("alfombras1", "Alfombra 1", "./img/alfombra1.jpg", "alfombra", 1000);
-// const alfombra2 = new Producto("alfombras2", "Alfombra 2", "./img/alfombra2.jpg", "alfombra", 1000);
-// const alfombra3 = new Producto("alfombras3", "Alfombra 3", "./img/alfombra3.jpg", "alfombra", 1000);
-// const alfombra4 = new Producto("alfombras4", "Alfombra 4", "./img/alfombra4.jpg", "alfombra", 2000);
-// const alfombra5 = new Producto("alfombras5", "Alfombra 5", "./img/alfombra5.jpg", "alfombra", 1000);
-// const alfombra6 = new Producto("alfombras6", "Alfombra 6", "./img/alfombra6.jpg", "alfombra", 1000);
-// // cotinas
-// const cortina1 = new Producto("cortina1", "Cortina 1", "./img/cortina1.jpg", "cortina", 1000);
-// const cortina2 = new Producto("cortina2", "Cortina 2", "./img/cortina2.jpg", "cortina", 1000);
-// const cortina3 = new Producto("cortina3", "Cortina 3", "./img/cortina3.jpg", "cortina", 1000);
-
-// array de productos
-
-// const productos = [manta1, manta2, manta3, manta4, manta5, manta6, almohadon1, almohadon2, almohadon3, almohadon4, almohadon5,
-//     almohadon6, almohadon7, alfombra1, alfombra2, alfombra3, alfombra4, alfombra5, alfombra6, cortina1, cortina2, cortina3]
-
+// Funcion que trae los productos de JSON local
 function obtenerProductosDelJSON() {
 
     fetch('./productos.json')
@@ -74,7 +43,7 @@ function obtenerProductosDelJSON() {
                     productoJSON.precio,
                 ));
             }
-            agregarProductos(productos); 
+            agregarProductos(productos);
         });
 }
 
@@ -86,6 +55,7 @@ let productos = [];
 
 obtenerProductosDelJSON();
 
+// Funcion que crear las tarjeticas de los productos
 function agregarProductos(productos) {
 
     contenedorProductos.innerHTML = "";
@@ -100,7 +70,7 @@ function agregarProductos(productos) {
                                         <p class="producto-precio"> $${producto.precio}</p>
                                         <button class="producto-agregar" id="${producto.id}">Agregar</button>
                                     </div>
-                                </div>
+                            </div>
                             `
         contenedorProductos.append(div);
     })
@@ -142,39 +112,14 @@ fetch('./productos.json')
         })
     })
 
-// const mantas = productos.filter((prod) => prod.categoria === 'mantas')
-// const almohadon = productos.filter((prod) => prod.categoria === 'almohadon')
-// const cortina = productos.filter((prod) => prod.categoria === 'cortina')
-// const alfombra = productos.filter((prod) => prod.categoria === 'alfombra')
-// botonesCategoria.forEach((boton) => {
-//     boton.addEventListener('click', () => {
-//         let botonDinamico = boton.id
-//         switch (botonDinamico) {
-//             case 'cortina':
-//                 categoria(cortina)
-//                 break;
-//             case 'mantas':
-//                 categoria(mantas)
-//                 break;
-//             case 'alfombra':
-//                 categoria(alfombra)
-//                 break;
-//             case 'almohadon':
-//                 categoria(almohadon)
-//                 break;
-//             default:
-//                 agregarProductos(productos)
-//                 break;
-//         }
-//     })
-// })
-
+// Funcion que muestra el hero de la pagina
 function mostrarDiv() {
     let mostrar = document.getElementById("ocultar");
     mostrar.style.display = "block";
 }
 mostrarDiv();
 
+// Funcion que oculta el hero de pagina
 function hide() {
     let hide1 = document.getElementById("productos");
     hide1.addEventListener("click", () => {
@@ -244,15 +189,16 @@ if (productosEnCarritoLS) {
     productosEnCarrito = [];
 }
 
+// Funcion que mete los productos al carrito
 function meterAlCarrito(e) {
 
     Toastify({
         text: "Producto agregado",
         duration: 3000,
         close: true,
-        gravity: "top", // `top` or `bottom`
-        position: "left", // `left`, `center` or `right`
-        stopOnFocus: true, // Prevents dismissing of toast on hover
+        gravity: "top",
+        position: "left",
+        stopOnFocus: true,
         destination: "../pages/carrito.html",
         style: {
             color: "Beige",
@@ -260,8 +206,8 @@ function meterAlCarrito(e) {
             fontSize: "1rem",
         },
         offset: {
-            x: "1.5rem", // horizontal axis - can be a number or a string indicating unity. eg: '2em'
-            y: "1.5rem" // vertical axis - can be a number or a string indicating unity. eg: '2em'
+            x: "1.5rem",
+            y: "1.5rem"
         },
         onClick: function () { } // Callback after click
     }).showToast();
@@ -283,6 +229,7 @@ function meterAlCarrito(e) {
 
 }
 
+// Funcion que actualiza el numero que del carrito
 function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;

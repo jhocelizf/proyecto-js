@@ -3,10 +3,10 @@ const inputNumber = document.querySelector("#input-number");
 const inputMonth = document.querySelector("#input-month");
 const inputYear = document.querySelector("#input-year");
 const inputCVC = document.querySelector("#input-cvc");
-const cardNumber = document.querySelector("#card-number");
-const cardName = document.querySelector("#card-name");
-const cardMonth = document.querySelector("#card-month");
-const cardYear = document.querySelector("#card-year");
+const cardNumber = document.querySelector("#tarjeta-numero");
+const cardName = document.querySelector("#tarjeta-nombre");
+const cardMonth = document.querySelector("#tarjeta-mes");
+const cardYear = document.querySelector("#tarjeta-year");
 const cardCVC = document.querySelector("#card-cvc");
 const form = document.querySelector("#form");
 const thankYou = document.querySelector("#thank-you");
@@ -16,11 +16,11 @@ inputName.addEventListener("input", () => {
     cardName.innerText = inputName.value;
 
     if (inputName.value.length === 0) {
-        cardName.innerText = "Jane Appleseed";
+        cardName.innerText = "Maria Perez";
     }
 })
 
-var cleave = new Cleave('#input-number', {
+let cleave = new Cleave('#input-number', {
     creditCard: true,
 });
 
@@ -66,7 +66,7 @@ buttonContinue.addEventListener("click", () => {
     form.classList.remove("disabled");
     thankYou.classList.add("disabled");
     form.reset();
-    cardName.innerText = "Jane Appleseed";
+    cardName.innerText = "Maria Perez";
     cardNumber.innerText = "0000 0000 0000 0000";
     cardMonth.innerText = "00";
     cardYear.innerText = "00";

@@ -520,7 +520,7 @@ max-width: 100%;
     max-width: 3.5rem;
 }
 
-.card-number {
+.tarjeta-numero {
     letter-spacing: 2px;
     font-size: 1.1rem;
 }
@@ -1030,7 +1030,7 @@ width: 90%;
         max-width: 3.5rem;
     }
     
-    .card-number {
+    .tarjeta-numero {
         letter-spacing: 2px;
         font-size: 1.1rem;
     }
