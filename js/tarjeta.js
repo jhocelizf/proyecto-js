@@ -71,4 +71,5 @@ buttonContinue.addEventListener("click", () => {
     cardMonth.innerText = "00";
     cardYear.innerText = "00";
     cardCVC.innerText = "000";
+    window.location.href = "../index.html";
 })
