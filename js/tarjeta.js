@@ -10,7 +10,7 @@ const cardYear = document.querySelector("#tarjeta-year");
 const cardCVC = document.querySelector("#card-cvc");
 const form = document.querySelector("#form");
 const thankYou = document.querySelector("#thank-you");
-const buttonContinue = document.querySelector("#continue");
+const botonVolver = document.querySelector("#volver");
 
 inputName.addEventListener("input", () => {
     cardName.innerText = inputName.value;
@@ -20,6 +20,7 @@ inputName.addEventListener("input", () => {
     }
 })
 
+// Codigo de la libreria cleave.js (Credit card number formatting)
 let cleave = new Cleave('#input-number', {
     creditCard: true,
 });
@@ -62,14 +63,7 @@ form.addEventListener("submit", (e) => {
     thankYou.classList.remove("disabled");
 })
 
-buttonContinue.addEventListener("click", () => {
-    form.classList.remove("disabled");
-    thankYou.classList.add("disabled");
-    form.reset();
-    cardName.innerText = "Maria Perez";
-    cardNumber.innerText = "0000 0000 0000 0000";
-    cardMonth.innerText = "00";
-    cardYear.innerText = "00";
-    cardCVC.innerText = "000";
+botonVolver.addEventListener("click", () => {
     window.location.href = "../index.html";
 })
+
